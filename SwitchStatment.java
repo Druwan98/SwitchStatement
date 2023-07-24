@@ -4,48 +4,52 @@ package exercises.switchstatement;
 //Print the name of the number (e.g. 5 --> five)
 //If the user input a number lower than 1 or greater than 10, print Cannot give you the name
 
-public class switchStatment {
+import java.util.Scanner;
+
+public class SwitchStatment {
     public static void main(String[] args) {
-        for (int i = 0; i < 11 ; i++) {
-            switch (i){
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+        System.out.print("Inserisci un numero da 1 a 10: ");
+        int number = scanner.nextInt();
+            System.out.print(number + " = ");
+
+            switch (number){
+
                 case 1 :
-                    System.out.print("one = ");
+                    System.out.println("one");
                     break;
                 case 2 :
-                    System.out.print("two = ");
+                    System.out.println("two");
                     break;
                 case 3 :
-                    System.out.print("three = ");
+                    System.out.println("three");
                     break;
                 case 4 :
-                    System.out.print("four = ");
+                    System.out.println("four");
                     break;
                 case 5 :
-                    System.out.print("five = ");
+                    System.out.println("five");
                     break;
                 case 6 :
-                    System.out.print("six = ");
+                    System.out.println("six");
                     break;
                 case 7 :
-                    System.out.print("seven = ");
+                    System.out.println("seven");
                     break;
                 case 8 :
-                    System.out.print("eight = ");
+                    System.out.println("eight");
                     break;
                 case 9 :
-                    System.out.print("nine = ");
+                    System.out.println("nine");
                     break;
                 case 10 :
-                    System.out.print("ten = ");
+                    System.out.println("ten");
                     break;
                 default:
                     System.out.println("Cannot give you the name.");
             }
-
-            System.out.println(i);
         }
-
-
-
     }
 }
